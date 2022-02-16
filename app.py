@@ -1,10 +1,6 @@
 
-#################################################
-# Application create by Emmanuel Martinez
-# from Module 9
-#################################################
-# Import the Flask Dependency
-#################################################
+
+
 
 import datetime as dt
 import numpy as np
@@ -17,10 +13,7 @@ from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify
 
-#################################################
-# Set Up the Database and Flask
-# Module 9.5.1
-#################################################
+
 engine = create_engine("sqlite:///hawaii.sqlite")
 
 # reflect an existing database into a new model
@@ -35,15 +28,10 @@ Station = Base.classes.station
 # Create our session (link) from Python to the DB
 session = Session(engine)
 
-#################################################
-# Create a New Flask App Instance
-#################################################
+
 app = Flask(__name__)
 
-#################################################
-# Create the Welcome Route
-# Module 9.5.2
-#################################################
+
 
 @app.route('/')
 def welcome():
