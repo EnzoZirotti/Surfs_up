@@ -105,4 +105,3 @@ def stats(start=None, end=None):
     temps = list(np.ravel(results))
     return jsonify(temps)
 
-print(temps)
